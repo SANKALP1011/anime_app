@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import Tilt from "react-tilt";
 import Lottie from "lottie-web";
-import Fox from "../Assets/Fox.json";
+import Kakashi from "../Assets/Kakashi.json";
 
 export const Anime = () =>{
     
@@ -27,14 +27,14 @@ export const Anime = () =>{
 
       React.useEffect(() => {
         Lottie.loadAnimation({
-          container: document.querySelector("#Fox"),
-          animationData: Fox,
+          container: document.querySelector("#Kakashi"),
+          animationData: Kakashi,
         });
       }, []);
 
 
     return<>
-    <div id="Fox"></div>
+    <div id="Kakashi"></div>
     <button onClick={fetchAnime}>Anime</button>
     
     <div className="item-container">
