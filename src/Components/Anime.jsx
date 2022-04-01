@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
 import Tilt from "react-tilt";
+import Lottie from "lottie-web";
+import Fox from "../Assets/Fox.json";
 
 export const Anime = () =>{
     
@@ -23,9 +25,16 @@ export const Anime = () =>{
         fetchAnime();
       }, []);
 
+      React.useEffect(() => {
+        Lottie.loadAnimation({
+          container: document.querySelector("#Fox"),
+          animationData: Fox,
+        });
+      }, []);
+
 
     return<>
-
+    <div id="Fox"></div>
     <button onClick={fetchAnime}>Anime</button>
     
     <div className="item-container">
