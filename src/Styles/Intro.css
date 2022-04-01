@@ -1,3 +1,12 @@
 h1{
     color: white;
+    text-align: center;
+}
+#Naruto{
+    width: 400px;
+    height: 400px;
+    margin: 3% auto;
+}
+.MainPageBlock{
+  margin: 30% 20% 30%;
 }

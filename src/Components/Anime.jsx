@@ -36,10 +36,9 @@ export const Anime = () =>{
            <h3>{value.title}</h3>
            <h3>{value.original_title}</h3>
            <h3>{value.original_title_romanised}</h3>
-           {/* <p>{value.description}</p> */}
-           {/* <p>{value.director}</p>
+           <p>{value.director}</p>
            <p>{value.producer}</p>
-           <p>{value.release_date}</p> */}
+           <p>{value.release_date}</p> 
            {moreAnimeInfo < anime.length && (
                <button onClick={moreInfo}>Info</button>
            )}
