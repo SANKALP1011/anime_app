@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
 import Tilt from "react-tilt";
@@ -14,6 +14,15 @@ export const Anime = () =>{
         })
     }
 
+    const [moreAnimeInfo,setMoreAnimeInfo] = useState(5);
+
+    const moreInfo = () =>{
+        setMoreAnimeInfo(moreAnimeInfo + 3);
+    }
+    useEffect(() => {
+        fetchAnime();
+      }, []);
+
 
     return<>
 
@@ -28,11 +37,13 @@ export const Anime = () =>{
            <h3>{value.original_title}</h3>
            <h3>{value.original_title_romanised}</h3>
            {/* <p>{value.description}</p> */}
-           <p>{value.director}</p>
+           {/* <p>{value.director}</p>
            <p>{value.producer}</p>
-           <p>{value.release_date}</p>
-           <button>SHOW MORE</button>
-           </div>
+           <p>{value.release_date}</p> */}
+           {moreAnimeInfo < anime.length && (
+               <button onClick={moreInfo}>Info</button>
+           )}
+          </div>
        </Tilt>
           
        ))}
