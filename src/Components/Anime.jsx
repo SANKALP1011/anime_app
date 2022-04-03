@@ -9,6 +9,10 @@ import "aos/dist/aos.css";
 
 export const Anime = () =>{
     
+    useEffect(() =>{
+        aos.init({duration:2000});
+      },[]);
+
     const [anime,setAnime] = useState([]);
     const [moreInfo,setMoreInfo] = useState([]);
     const fetchAnime = () =>{
@@ -41,6 +45,7 @@ export const Anime = () =>{
 
     return<>
     <div id="Kakashi"></div>
+    <h1>Scroll below to check out the list of animes.</h1>
     <button onClick={fetchAnime}>Anime</button>
     
     <div className="item-container">
