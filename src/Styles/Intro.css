@@ -1,5 +1,5 @@
 h1{
-    color: white;
+    color: gold;
     text-align: center;
 }
 #Naruto{
@@ -9,4 +9,7 @@ h1{
 }
 .MainPageBlock{
   margin: 30% 20% 30%;
+}
+.LandingText{
+  color: gold;
 }
