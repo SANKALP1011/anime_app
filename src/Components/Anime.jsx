@@ -45,7 +45,6 @@ export const Anime = () =>{
 
     return<>
     <div id="Kakashi"></div>
-    <h1>Scroll below to check out the list of animes.</h1>
     <button onClick={fetchAnime}>Anime</button>
     
     <div className="item-container">
