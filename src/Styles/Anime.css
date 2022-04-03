@@ -3,7 +3,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 10em;
-    margin-top: 30%;
+    margin-top: 20%;
     margin-bottom: 20%;
   }
   .card{
@@ -20,9 +20,9 @@
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 
   }
-  img {
+  img{
     height: 200px;
-    width: auto;
+    width: 200px;
     border-radius: 30px;
     box-shadow: rgba(99, 99, 99, 0.2) 20px 20px 8px 10px;
   }

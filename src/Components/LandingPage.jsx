@@ -4,6 +4,7 @@ import Lottie from "lottie-web";
 import Naruto from "../Assets/Naruto.json";
 import Tilt from "react-tilt";
 
+
 export const LandingPage = () =>{
 
     React.useEffect(() => {

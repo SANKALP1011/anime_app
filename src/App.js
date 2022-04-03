@@ -4,6 +4,7 @@ import LandingPage from "./Components/LandingPage";
 import "../src/Styles/Anime.css";
 import "../src/Styles/Intro.css";
 import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import aos from "aos";
 
 function App() {
   return <>
