@@ -1,15 +1,20 @@
-h1{
-    color: gold;
-    text-align: center;
+.HeadingText{
+    color: #9A0680;
+    font-weight: bolder;
+    font-size: 100px;
 }
 #Naruto{
     width: 400px;
     height: 400px;
-    margin: 3% auto;
+    margin: 30% auto;
 }
 .MainPageBlock{
   margin: 30% 20% 30%;
 }
 .LandingText{
   color: gold;
+  margin: 30% 20% 20% 30%;
+}
+.SubText{
+  margin: 10% 0% 5% 0%;
 }
