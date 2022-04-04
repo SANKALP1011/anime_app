@@ -1,10 +1,24 @@
+.LandingText{
+    color: gold;
+    margin: 20% 20% 20% 15%;
+}
+.HeadingText{
+  color: #9A0680;
+  font-weight: bolder;
+  font-size: 80px;
+}
+.SubText{
+  margin: 10% 0% 5% 0%;
+  color: gold;
+  word-wrap: break-word;
+  font-weight: bolder;
+}
 .item-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10em;
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin: 10% 0% 20% 0%;
   }
   .card{
     text-align: center;
@@ -20,14 +34,15 @@
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 
   }
-  img{
+.AnimeImage{
     height: 200px;
     width: 200px;
     border-radius: 30px;
+    margin: 0% 0% 10% 10%;
     box-shadow: rgba(99, 99, 99, 0.2) 20px 20px 8px 10px;
   }
 #Kakashi{
-    height: 400px;
-    width: 400px;
-    margin-left: 60%;
+  height: 400px;
+  width: 400px;
+  margin: 25% auto;
 }
