@@ -89,12 +89,12 @@ export const Anime = () =>{
        <Tilt>
  <div className="card" data-aos="fade-down-left" key={value.id}>
            <img className="AnimeImage" src={value.image}></img>
-           <h3>{value.title}</h3>
-           <h3>{value.original_title}</h3>
-           <h3>{value.original_title_romanised}</h3>
-           <p>{value.director}</p>
-           <p>{value.producer}</p>
-           <p>{value.release_date}</p> 
+           <h3>Title: {value.title}</h3>
+           <h3>Original Title: {value.original_title}</h3>
+           <h3>Roman Title:{value.original_title_romanised}</h3>
+           <p>Director: {value.director}</p>
+           <p>Producer: {value.producer}</p>
+           <p>Date: {value.release_date}</p> 
           </div>
        </Tilt>
           
