@@ -46,3 +46,17 @@
   width: 400px;
   margin: 25% auto;
 }
+.CardTextTitle{
+  font-size: 20px;
+  font-weight: bolder;
+  color: #E63E6D;
+  text-decoration: underline;
+  margin: 0% 0% 5% 0%;
+}
+.CardText{
+  color: #180A0A;
+  font-weight: bolder;
+}
+h1{
+  color: #a8eb12;
+}
