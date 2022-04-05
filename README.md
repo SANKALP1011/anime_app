@@ -2,6 +2,9 @@
 
 - This is an react app which uses anime api as the backend for fetching the animes.
 
+# Live Server
+ - https://anime-app-ebon.vercel.app
+
 # FrontEnd
  - React.js
 
