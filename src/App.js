@@ -1,7 +1,7 @@
 import React from "react";
 import Anime from "./Components/Anime";
+import Main from "./Components/Main";
 import LandingPage from "./Components/LandingPage";
-import IntroPage from "./Components/IntroPage";
 import AnimeDetails from "./Components/AnimeDetail";
 import "../src/Styles/Anime.css";
 import "../src/Styles/Intro.css";
@@ -15,8 +15,8 @@ function App() {
 
 <Router>
       <Routes>
-        <Route exact path="/" element={<IntroPage />} />
-        <Route exact path="/LandingPage"  element={<LandingPage />} />
+        <Route exact path="/" element={<LandingPage />} />
+        <Route exact path="/Main"  element={<Main />} />
         <Route exact path="/Anime" element={<Anime/>}/>
         <Route exact path="/Anime/:id" element={<AnimeDetails />} />
 
