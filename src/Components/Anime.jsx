@@ -1,5 +1,5 @@
 import React, { useEffect, useRef} from "react";
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
 import Tilt from "react-tilt";
