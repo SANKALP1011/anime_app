@@ -6,6 +6,7 @@ import AnimeDetails from "./Components/AnimeDetail";
 import "../src/Styles/Anime.css";
 import "../src/Styles/Intro.css";
 import "../src/Styles/MainPage.css";
+import "../src/Styles/AnimeDetails.css";
 import { BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import aos from "aos";
 

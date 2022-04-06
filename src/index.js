@@ -4,6 +4,7 @@ import App from './App';
 import "../src/Styles/Anime.css";
 import "../src/Styles/Intro.css";
 import "../src/Styles/index.css";
+import "../src/Styles/AnimeDetails.css";
 import aos from "aos";
 aos.init();
 
