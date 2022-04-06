@@ -14,7 +14,7 @@ export const AnimeDetails = () =>{
         axios.get(`https://ghibliapi.herokuapp.com/films/${id}`)
         .then((response)=>{
             setDetails(response.data);
-            console.log(response)
+            console.log(response.data)
         })
         .catch((err)=>{
             console.log(err);
@@ -25,17 +25,13 @@ export const AnimeDetails = () =>{
         getAnimeDetails();
     },[]);
 
-    return <>
-
-   {details.map((value)=>(
-       <div key={value.id}>
-           <h1>{value.original_title}</h1>
-       </div>
+    return<>
+        {details.map((value)=>(
+             <div key={value.id}>
+                <h1>{value.original_title}</h1>
+             </div>
    ))}
-     
-     
-    
-    </>
+ </>
 
 }
 

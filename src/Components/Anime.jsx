@@ -28,7 +28,7 @@ export const Anime = () =>{
       },[]);
 
     const [anime,setAnime] = useState([]);
-    const [moreInfo,setMoreInfo] = useState([]);
+
     const fetchAnime = () =>{
         axios.get("https://ghibliapi.herokuapp.com/films")
         .then((response)=>{
@@ -48,14 +48,7 @@ export const Anime = () =>{
         });
       }, []);
 
-      const showDetails = () =>{
-          axios.get("https://ghibliapi.herokuapp.com/films")
-          .then((response) =>{
-              console.log(response);
-              console.log(response.request.id);
-              setMoreInfo(response.data)
-          })
-      }
+    
 
       const getQuotes = () =>{
         Swal.fire("Naruto",
