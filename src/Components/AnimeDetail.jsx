@@ -27,7 +27,7 @@ export const AnimeDetails = () =>{
                return res.json()
            }
            else{
-               console.log("khkhkhkjhkhkh")
+               console.log("Response returned is not correct.")
            }
        })
        .then(data => {
