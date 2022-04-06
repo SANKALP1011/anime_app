@@ -12,24 +12,21 @@ export const Main = () =>{
 
    const LandingText = useRef();
 
-
-      useEffect(() => {
+   useEffect(() => {
         init(LandingText.current, { 
            showCursor: true,
            backSpeed: 60,
            backDelay: 1500,
            strings: [ 'アニメ','Anime'] })
         },[]);
-    
-
+  
     const DeveloperAlert = () =>{
       Swal.fire("Developer-:",
       "My name is Sankalp , a second year computer science student at Vellore Insitute of Technology , Vellore.  I am full stack web developer who just loves designing beautiful user interface , implementing logic of backend and designing the database.",
     )
     }
     
-
-        React.useEffect(() => {
+    React.useEffect(() => {
           Lottie.loadAnimation({
             container: document.querySelector("#Naruto"),
             animationData: Naruto,

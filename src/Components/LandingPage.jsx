@@ -15,8 +15,6 @@ export const LandingPage = () =>{
        strings: [ 'Animeee','动漫应用'] })
     },[]);
    
-   
-   
     React.useEffect(() => {
         Lottie.loadAnimation({
           container: document.querySelector("#IntroAnimation"),
@@ -25,8 +23,7 @@ export const LandingPage = () =>{
       }, []);
 
      
-
-    return <>
+  return <>
     <div id="IntroAnimation"></div>
     <div className="IntroPageDiv">
     <h1 className="HeadingText"><span ref={IntroText}></span></h1>
