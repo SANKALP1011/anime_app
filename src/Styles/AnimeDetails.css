@@ -1,4 +1,38 @@
 .DetailsCard{
     margin: 20% 20% 20% 20%;
     background-color: white;
+    border-radius: 30px;
+    text-align: center;
 }
+.DetailsCard:hover{
+    transform: translateY(-20px);
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+.AnimeDetailsImg{
+    height: 300px;
+    width: 3s00px;
+    border-radius: 30px;
+    margin: 10% auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 20px 20px 8px 10px;
+}
+.Content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 5% 3% 10%;
+}
+.Details{
+    margin-left: 2%;
+    font-weight: bolder;
+    color: #864879;
+}
+.Description{
+    font-weight: bolder;
+    color: #864879;
+    margin: 2% 0% 2% 0%;
+}
+.CardText{
+    color: #180A0A;
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: underline;
+  }
