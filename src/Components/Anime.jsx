@@ -85,11 +85,6 @@ export const Anime = () =>{
  <div className="card" data-aos="fade-down-left" key={value.id}>
            <img className="AnimeImage" key={value.id} src={value.image}></img>
            <h1 className="CardTextTitle" key={value.id}>{value.title}</h1>
-           {/* <h3 className="CardText">Original Title: {value.original_title}</h3>
-           <h3 className="CardText">Roman Title: {value.original_title_romanised}</h3>
-           <p className="CardText">Director: {value.director}</p>
-           <p className="CardText">Producer: {value.producer}</p>
-           <p className="CardText">Date: {value.release_date}</p>  */}
            <NavLink exact to={`/Anime/${value.id}`}>
               <button type="button"  className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Details</button>
            </NavLink>
