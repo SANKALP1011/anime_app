@@ -58,7 +58,7 @@ export const Anime = () =>{
 
     return<>
     <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
-      <div className="LandingText" data-aos="fade-right">
+      <div className="LandingText" data-aos="fade-down-right">
         <h1 className="HeadingText">
           <span ref={AnimeApiText}></span>
         </h1>
@@ -75,18 +75,18 @@ export const Anime = () =>{
         Quotes
       </button>
       </div>
-      <div id="Kakashi" data-aos="fade-left"></div>
+      <div id="Kakashi" data-aos="fade-down-left"></div>
     </div>
-    <button onClick={fetchAnime}>Anime</button>
+
     
     <div className="item-container">
    {anime.map((value)=>(
        <Tilt>
  <div className="card" data-aos="fade-down-left" key={value.id}>
-           <img className="AnimeImage" key={value.id} src={value.image}></img>
-           <h1 className="CardTextTitle" key={value.id}>{value.title}</h1>
-           <NavLink exact to={`/Anime/${value.id}`}>
-              <button type="button"  className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Details</button>
+           <img className="AnimeImage" data-aos="fade-down-right"  key={value.id} src={value.image}></img>
+           <h1 className="CardTextTitle" data-aos="fade-down-left"  key={value.id}>{value.title}</h1>
+           <NavLink  exact to={`/Anime/${value.id}`}>
+              <button data-aos="fade-down-right"  type="button"  className="text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Details</button>
            </NavLink>
 
           </div>
