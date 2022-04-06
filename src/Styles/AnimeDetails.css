@@ -9,8 +9,8 @@
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 .AnimeDetailsImg{
-    height: 300px;
-    width: 300px;
+   width: 300px;
+   height: 300px;
     border-radius: 30px;
     margin: auto;
     box-shadow: rgba(99, 99, 99, 0.2) 20px 20px 8px 10px;
