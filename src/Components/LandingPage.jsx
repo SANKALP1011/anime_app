@@ -12,7 +12,7 @@ export const LandingPage = () =>{
        showCursor: true,
        backSpeed: 60,
        backDelay: 1500,
-       strings: [ 'Animeee','动漫应用'] })
+       strings: [ 'Anime','动漫应用'] })
     },[]);
    
     React.useEffect(() => {
