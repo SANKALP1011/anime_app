@@ -25,5 +25,6 @@
 
 
 # Diagram to show the working of the app
+ ![Diagram](IMG-5986.JPG)
 
 
