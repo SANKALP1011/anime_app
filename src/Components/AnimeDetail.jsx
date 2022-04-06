@@ -4,7 +4,7 @@ import axios from "axios";
 
 export const AnimeDetails = () =>{
 
-    const {id} = useParams();
+    const {id} = useParams({});
     const [details,setDetails] = useState([]);
 
     console.log(id);
@@ -23,7 +23,7 @@ export const AnimeDetails = () =>{
 
     useEffect(()=>{
         getAnimeDetails();
-    },[]);
+    },[id]);
 
     return<>
         {details.map((value)=>(
