@@ -12,14 +12,17 @@ export const AnimeDetails = () =>{
 
     console.log(id);
   
+    //For displaying the information when using id parameter.
     useEffect(()=>{
         getAnimeDetails();
     });
 
+    //For scroll animation.
     useEffect(() =>{
         aos.init({duration:2000});
       },[]);
 
+    //Function for fetching the information when user clicks on certain anime and then using that anime id to fetch the details of that particular anime.  
     const getAnimeDetails = () =>{
        fetch(`https://ghibliapi.herokuapp.com/films`)
        .then(res =>{

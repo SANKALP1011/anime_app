@@ -15,6 +15,7 @@ export const Anime = () => {
 
   const AnimeApiText = useRef();
 
+  //For the typing animation.
   useEffect(() => {
     init(AnimeApiText.current, {
       showCursor: true,
@@ -24,12 +25,14 @@ export const Anime = () => {
     })
   }, []);
 
+  //For the scrolling animation.
   useEffect(() => {
     aos.init({ duration: 2000 });
   }, []);
 
   const [anime, setAnime] = useState([]);
 
+  //Function for fetching information from api.
   const fetchAnime = () => {
     axios.get("https://ghibliapi.herokuapp.com/films")
       .then((response) => {
@@ -38,10 +41,12 @@ export const Anime = () => {
       })
   }
 
+  //For loading the information fetched from the api and displaying it.
   useEffect(() => {
     fetchAnime();
   }, []);
 
+  //For naruto animation
   React.useEffect(() => {
     Lottie.loadAnimation({
       container: document.querySelector("#Kakashi"),
@@ -49,8 +54,7 @@ export const Anime = () => {
     });
   }, []);
 
-
-
+  //For getting the quotes
   const getQuotes = () => {
     Swal.fire("Naruto",
       "If you don’t like your destiny, don’t accept it.")
